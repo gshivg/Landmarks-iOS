@@ -13,6 +13,7 @@ struct ContentView: View {
     enum Tab {
         case featured
         case list
+//        case profile
     }
     
     var body: some View {
@@ -30,6 +31,12 @@ struct ContentView: View {
                     
                 }
                 .tag(Tab.list)
+            
+//            ProfileHost()
+//                .tabItem{
+//                    Label("Profile", systemImage: "person")
+//                }
+//                .tag(Tab.profile)
         }
     }
 }
